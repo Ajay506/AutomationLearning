@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Naukriwebsite" configfailurepolicy="continue">
+
+	<listeners>
+
+		<listener class-name="customlisteners.Listeners"></listener>
+
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+
+	</listeners>
+
+	<test name="AutomateTest">
+
+		<classes>
+			
+			
+			<class name="Testcases.TestNGFailureScreenshot"/>
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
